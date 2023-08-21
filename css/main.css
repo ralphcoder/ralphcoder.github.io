@@ -406,7 +406,7 @@ h6 {
 
 
 .home {
-    background: url('../images/home.gif') center center no-repeat fixed;
+    background: url('../images/aboutt.png') center center no-repeat fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -414,10 +414,20 @@ h6 {
     position: relative;
     height: 100vh;
     overflow: hidden;
+    animation: scrollBackground 50s linear 0s normal none infinite; /* Adjust animation duration as needed */
+}
+
+@keyframes scrollBackground {
+    0% {
+        background-position: center top;
+    }
+    100% {
+        background-position: center bottom;
+    }
 }
 
 .home .overlay {
-    background-color: rgba(43, 42, 47, .7);
+    background-color: rgba(100, 100, 100, 0.7);
     position: absolute;
     top: 0;
     left: 0;
